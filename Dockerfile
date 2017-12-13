@@ -21,10 +21,10 @@ ENV FLINK_VERSION=1.3.2 \
     HADOOP_VERSION=27 \
     SCALA_VERSION=2.11 \
     HBASE_VERSION=1.3.1 \
-    KAFKA_VERSION=1.0.0 \
-    KAFKA_API_VERSION=1.0 \
+    KAFKA_VERSION=0.11.0.2 \
+    KAFKA_API_VERSION=0.11.0.2 \
     ZOOKEEPER_VERSION=3.4.10 \
-    JMX_PORT=7203 \
+#    JMX_PORT=7203 \
     VIEWER_PATH=/data/viewer/factsViewer.jar
 
 RUN /build/prepare-kafka.sh
@@ -78,7 +78,7 @@ EXPOSE 16020 16030
 # Flink
 EXPOSE 6123
 # JMX
-EXPOSE ${JMX_PORT}
+#EXPOSE ${JMX_PORT}
 # Flink web UI
 EXPOSE 8081
 # SpringBoot Viewer web UI
