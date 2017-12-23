@@ -17,7 +17,7 @@ COPY *.sh /build/
 RUN chmod +x /build/*.sh
 
 # Configure version
-ENV FLINK_VERSION=1.3.2 \
+ENV FLINK_VERSION=1.4.0 \
     HADOOP_VERSION=27 \
     SCALA_VERSION=2.11 \
     HBASE_VERSION=1.3.1 \
