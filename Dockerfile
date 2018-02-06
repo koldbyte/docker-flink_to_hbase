@@ -5,7 +5,11 @@
 # http://docs.docker.io/en/latest/use/builder/
 
 FROM ubuntu:xenial
-MAINTAINER Federico Soldani <pippo@daemon-ware.com>
+
+LABEL maintainer="Federico Soldani <pippo@daemon-ware.com>"
+LABEL version="1.3"
+LABEL description="Image for realtime analyzing with Flink stream processing and HBase storage"
+
 
 # Configure version
 ENV FLINK_VERSION=1.4.0 \
